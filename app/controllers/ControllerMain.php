@@ -7,7 +7,7 @@ use core\Controller;
 class ControllerMain extends Controller {
 
     public function action_index() {
-        echo 'Main controller action index'; //TODO delete
+        $this->view->reder('main_index_view');
     }
 
     public function action_create() {
