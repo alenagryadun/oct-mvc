@@ -7,7 +7,7 @@ use core\Controller;
 class ControllerMain extends Controller {
 
     public function action_index() {
-        $this->view->reder('main_index_view');
+        $this->view->render('main_index_view');
     }
 
     public function action_create() {

@@ -30,7 +30,7 @@ class Route {
             include_once $model_path;
         }
 
-        $controller_path = 'app' . DIRECTORY_SEPARATOR . $controller_name . 'php';
+        $controller_path = 'app' . DIRECTORY_SEPARATOR . $controller_name . '.php';
         if (file_exists($controller_path)) {
             include_once $controller_path;
         } else {
