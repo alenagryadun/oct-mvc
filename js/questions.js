@@ -1,41 +1,44 @@
-document.getElementById('courses').onclick = function () {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5');
-    xhr.onreadystatechange = function(){
-        if (xhr.readyState ===4 ){
-            if(xhr.status === 200){
-                var json_text = xhr.responseText;
-                var courses = JSON.parse(json_text);
-                for (var i=0; i<courses.length;i++){
-                    alert(courses[i].ccy);//TODO выводи как хочешь
-                }
-            } else{
-                alert('error: '+xhr.statusText);
-            }
-        }
-        
-    };
-    xhr.send();
-};
+//document.getElementById('courses').onclick = function () {
+//    var xhr = new XMLHttpRequest();
+//    xhr.open('GET', 'https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5');
+//    xhr.onreadystatechange = function(){
+//        if (xhr.readyState ===4 ){
+//            if(xhr.status === 200){
+//                var json_text = xhr.responseText;
+//                var courses = JSON.parse(json_text);
+//                for (var i=0; i<courses.length;i++){
+//                    alert(courses[i].ccy);//TODO выводи как хочешь
+//                }
+//            } else{
+//                alert('error: '+xhr.statusText);
+//            }
+//        }
+//        
+//    };
+//    xhr.send();
+//};
 
-function getQuestions(){
+document.getElementById('question-btn').onclick = function () {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', '/api/questions');
-    xhr.onreadystatechange = function(){
-        if (xhr.readyState ===4 ){
-            if(xhr.status === 200){
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
                 var json_text = xhr.responseText;
                 var questions = JSON.parse(json_text);
-                return questions;
-            } else{
+                console.log(questions);
+                //TODO вывести в табличку
+                var tbody = document.querySelector('#questions tbody');
+                tbody.innerHTML = '';
+                var str = '';
+                for (var i = 0; i < questions.length; i++) {
+                    str += '<tr><td>' + questions[i].id + '</td><td>' + questions[i].author + '</td><td>' + questions[i].text + '</td></tr>';
+                }
+                tbody.innerHTML = str;
+            } else {
                 return false;
             }
         }
     };
     xhr.send();
-};
-
-document.ggetElementById('question-btn').onclick = function (){
-    var questions=getQuestion();
-    console.log(questions);
 };
