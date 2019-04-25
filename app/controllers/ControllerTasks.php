@@ -16,5 +16,4 @@ class ControllerTasks extends Controller {
         $this->view->tasks = $this->model->all();
         $this->view->render('tasks_index_view');
     }
-
 }
