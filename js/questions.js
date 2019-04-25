@@ -34,3 +34,8 @@ function getQuestions(){
     };
     xhr.send();
 };
+
+document.ggetElementById('question-btn').onclick = function (){
+    var questions=getQuestion();
+    console.log(questions);
+};
