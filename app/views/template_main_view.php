@@ -6,6 +6,10 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
         <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
             main{
                 margin-left:27%;
                 margin-right: 2%;
@@ -42,6 +46,9 @@
             }
             .hidden{
                 visibility: hidden;
+            }
+            .getques{
+                margin-top: 20px;
             }
         </style>
     </head>

@@ -1,7 +1,7 @@
 <form class="w3-container" method="POST" action = "/tasks/add">
 
 <label>Add new task: </label>
-<input class="w3-input" type="text">
+<input class="w3-input" type="text" name="newTask">
 
 <input type="submit" class ="w3-button w3-flat-turquoise" value="Add"/>
 

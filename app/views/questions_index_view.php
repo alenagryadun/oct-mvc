@@ -1,4 +1,4 @@
-<table id="questions">
+<table id="questions" class="w3-table-all">
     <thead>
         <tr>
             <th>#</th>
@@ -7,10 +7,8 @@
         </tr>
     </thead>
     <tbody>
-
     </tbody>
 </table>
-<!--<button id="courses" type="button">Get courses</button>-->
-<button id="question-btn" type="button">Get question</button>
+<button id="question-btn" type="button" class="w3-button w3-flat-turquoise getques">Get question</button>
 <script src='js/questions.js'></script>
 
