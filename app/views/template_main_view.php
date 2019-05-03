@@ -11,7 +11,8 @@
                 padding: 0;
             }
             main{
-                margin-left:27%;
+                padding-top: 20px;
+                margin-left: 27%;
                 margin-right: 2%;
             }
             .back-btn{
@@ -20,7 +21,7 @@
                 left:120px;
             }
             #tasksDiv{
-                padding-top: 20px;
+
                 display: flex;
                 flex-direction: row;
             }
@@ -32,7 +33,7 @@
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position-x: 50%;
-                
+
             }
             .edit{
                 background-image: url('https://findicons.com/files/icons/99/office/128/edit.png');
@@ -55,13 +56,13 @@
     <body>
         <div class="w3-sidebar w3-bar-block w3-flat-turquoise" style="width:25%"> 
             <h2>My Site</h2>
-  <a href="/" class="w3-bar-item w3-button w3-flat-turquoise">Home</a>
-  <a href="/tasks" class="w3-bar-item w3-button w3-flat-turquoise">Tasks</a>
-  <a href="/questions" class="w3-bar-item w3-button w3-flat-turquoise">Questions</a>
-  <a href="#" class="w3-bar-item w3-button w3-flat-turquoise">TODO</a>
-</div>
+            <a href="/" class="w3-bar-item w3-button w3-flat-turquoise">Home</a>
+            <a href="/tasks" class="w3-bar-item w3-button w3-flat-turquoise">Tasks</a>
+            <a href="/questions" class="w3-bar-item w3-button w3-flat-turquoise">Questions</a>
+            <a href="#" class="w3-bar-item w3-button w3-flat-turquoise">TODO</a>
+        </div>
         <main>
-            <?php include_once 'app'.DIRECTORY_SEPARATOR.'views'.DIRECTORY_SEPARATOR.$content_view.'.php'?>
+            <?php include_once 'app' . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR . $content_view . '.php' ?>
         </main>
     </body>
 </html>

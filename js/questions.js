@@ -1,6 +1,6 @@
 
-document.getElementById('question-btn').onclick = function () {
-    
+function showQuestions() {
+
     var xhr = new XMLHttpRequest();
     xhr.open('GET', '/api/questions');
     xhr.onreadystatechange = function () {
@@ -21,4 +21,5 @@ document.getElementById('question-btn').onclick = function () {
         }
     };
     xhr.send();
-};
+}
+showQuestions();
