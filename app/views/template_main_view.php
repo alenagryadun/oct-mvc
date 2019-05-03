@@ -10,6 +10,39 @@
                 margin-left:27%;
                 margin-right: 2%;
             }
+            .back-btn{
+                position: relative;
+                top:-39px;
+                left:120px;
+            }
+            #tasksDiv{
+                padding-top: 20px;
+                display: flex;
+                flex-direction: row;
+            }
+            .btn{
+                width: 25px;
+                height: 25px;
+                margin:2px;
+                margin-top: 1px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position-x: 50%;
+                
+            }
+            .edit{
+                background-image: url('https://findicons.com/files/icons/99/office/128/edit.png');
+                margin-left: 10px;
+            }
+            .delete{
+                background-image: url('http://s1.iconbird.com/ico/1212/264/w128h1281355246842delete2.png');
+            }
+            .save{
+                background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Tick_green_modern.svg/1172px-Tick_green_modern.svg.png');
+            }
+            .hidden{
+                visibility: hidden;
+            }
         </style>
     </head>
     <body>
