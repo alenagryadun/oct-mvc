@@ -5,6 +5,7 @@
         <title>My Site</title>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <style>
             *{
                 margin: 0;
@@ -59,7 +60,7 @@
             <a href="/" class="w3-bar-item w3-button w3-flat-turquoise">Home</a>
             <a href="/tasks" class="w3-bar-item w3-button w3-flat-turquoise">Tasks</a>
             <a href="/questions" class="w3-bar-item w3-button w3-flat-turquoise">Questions</a>
-            <a href="#" class="w3-bar-item w3-button w3-flat-turquoise">TODO</a>
+            <a href="/gallery" class="w3-bar-item w3-button w3-flat-turquoise">Gallery</a>
         </div>
         <main>
             <?php include_once 'app' . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR . $content_view . '.php' ?>
